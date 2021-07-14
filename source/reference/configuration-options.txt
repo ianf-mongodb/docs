@@ -3848,6 +3848,21 @@ LDAP Parameters
    *Available starting in MongoDB 4.2.1 (and 4.0.12)*
    
 
+.. setting:: storage.wiredTiger.engineConfig.zstdCompressionLevel
+
+   *Type*: integer
+
+   *Default*: 6
+
+   Specifies the level of compression applied when using 
+   the :term:`zstd` compressor.
+
+   Values can range from 1 to 22. 
+
+   The higher the specified value for ``zstdCompressionLevel`` 
+   the higher the compression which is applied.
+
+   *Available starting in MongoDB 5.0*
 
 .. setting:: storage.wiredTiger.collectionConfig.blockCompressor
 
