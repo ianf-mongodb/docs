@@ -234,10 +234,6 @@ Definition
       ``explain`` option, the document that provides
       details on the processing of the aggregation operation.
 
-      If the pipeline includes the :pipeline:`$out` operator,
-      :method:`~db.collection.aggregate()` returns an empty cursor. See
-      :pipeline:`$out` for more information.
-
 Behavior
 --------
 
