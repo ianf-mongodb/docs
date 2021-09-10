@@ -1898,6 +1898,8 @@ Sharded Cluster Options
    ``/data/configdb``, unless specified.
    
    .. important::
+
+      Starting in MongoDB 5.1, 
    
       Starting in 3.4, you must deploy config servers as a replica set.
       The use of the deprecated mirrored :binary:`~bin.mongod` instances as

@@ -59,6 +59,18 @@ determines whether the temporary documents required for :ref:`retryable
 <retryable-writes>` :dbcommand:`findAndModify` commands are stored in
 the *side* collection (``config.image_collection``).
 
+
+``Mongod`` Sharded Cluster And Config Server Changes
+----------------------------------------------------
+
+When starting a :binary:`mongod` with the 
+:option:`--configsvr <mongod--configsvr>` option it is now required to 
+specify a :option:`--replSetName <mongod --replSet>`.
+
+When starting a mongod with the :option:`--shardsvr <mongod --shardsvr>`
+option it is now required to specify a 
+:option:`--replSetName <mongod --replSet>`.
+
 Report an Issue
 ---------------
 
