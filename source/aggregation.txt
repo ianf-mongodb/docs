@@ -32,9 +32,18 @@ transforms the documents into an aggregated result. For example:
 .. code-block:: javascript
 
    db.orders.aggregate([
+      // :snippet-start: test-block
       { $match: { status: "A" } },
       { $group: { _id: "$cust_id", total: { $sum: "$amount" } } }
+      // :snippet-end:
    ])
+
+**------------------------TEST------------------------**
+
+.. literalinclude:: /includes/codeblocks/aggregation.codeblock.test-block.txt
+   :language: javascript
+
+**------------------------TEST------------------------**
 
 **First Stage**: The :pipeline:`$match` stage filters the documents by
 the ``status`` field and passes to the next stage those documents that
