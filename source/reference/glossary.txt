@@ -900,11 +900,8 @@ Glossary
    snappy
       A compression/decompression library designed to balance
       efficient computation requirements with reasonable compression rates.
-      Snappy is the default compression
-      library for MongoDB's use of :ref:`WiredTiger
-      <storage-wiredtiger>`. See `Snappy
-      <https://google.github.io/snappy/>`_ and the :wtdocs:`WiredTiger compression
-      documentation </compression.html>`
+      See `Snappy <https://google.github.io/snappy/>`_ and the 
+      :wtdocs:`WiredTiger compression documentation </compression.html>`
       for more information.
 
    split

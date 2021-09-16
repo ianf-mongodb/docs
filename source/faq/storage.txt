@@ -60,9 +60,13 @@ How much compression does WiredTiger provide?
 
 The ratio of compressed data to uncompressed data depends on your data
 and the compression library used. By default, collection data in
-WiredTiger use :term:`Snappy block compression <snappy>`; :term:`zlib`
-and :term:`zstd` compression is also available. Index data use
-:term:`prefix compression` by default.
+WiredTiger use :term:`zstd`; :term:`zlib`
+and :term:`Snappy block compression <snappy>` compression is 
+also available. Index data use :term:`prefix compression` by default.
+
+.. note::
+
+   .. include:: /includes/fact-5.1-default-block-compression.rst
 
 .. _wt-cache-and-eviction:
 

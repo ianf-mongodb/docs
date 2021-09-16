@@ -3814,7 +3814,7 @@ LDAP Parameters
 
 .. setting:: storage.wiredTiger.engineConfig.journalCompressor
 
-   *Default*: snappy
+   *Default*: zstd (Starting in MongoDB 5.1)
 
    Specifies the type of compression to use to compress WiredTiger
    journal data.
@@ -3914,7 +3914,7 @@ LDAP Parameters
 
 .. setting:: storage.wiredTiger.collectionConfig.blockCompressor
 
-   *Default*: snappy
+   *Default*: zstd (Starting in MongoDB 5.1)
 
    Specifies the default compression for collection data. You can
    override this on a per-collection basis when creating collections.
@@ -3924,7 +3924,7 @@ LDAP Parameters
    - ``none``
    
    - :term:`snappy`
-   
+
    - :term:`zlib`
    
    - :term:`zstd` (Available starting MongoDB 4.2)

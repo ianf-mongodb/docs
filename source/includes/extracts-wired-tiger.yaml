@@ -144,7 +144,7 @@ content: |
 
    .. include:: /includes/extracts/wt-cache-default-setting.rst
 
-   By default, WiredTiger uses Snappy block compression for all collections
+   By default, WiredTiger uses zstd block compression for all collections
    and prefix compression for all indexes. Compression defaults are configurable
    at a global level and can also be set on a per-collection and per-index
    basis during collection and index creation.

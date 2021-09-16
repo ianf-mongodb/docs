@@ -1699,7 +1699,7 @@ WiredTiger Options
 
 .. option:: --wiredTigerJournalCompressor <compressor>
 
-   *Default*: snappy
+   *Default*: zstd (Starting in MongoDB 5.1)
 
    Specifies the type of compression to use to compress WiredTiger
    journal data.
@@ -1733,7 +1733,7 @@ WiredTiger Options
 
 .. option:: --wiredTigerCollectionBlockCompressor <compressor>
 
-   *Default*: snappy
+   *Default*: zstd (Starting in MongoDB 5.1)
 
    Specifies the default compression for collection data. You can
    override this on a per-collection basis when creating collections.

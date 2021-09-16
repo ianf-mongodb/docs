@@ -59,6 +59,14 @@ determines whether the temporary documents required for :ref:`retryable
 <retryable-writes>` :dbcommand:`findAndModify` commands are stored in
 the *side* collection (``config.image_collection``).
 
+Default Block Compression Changed
+---------------------------------
+
+.. include:: /includes/fact-5.1-default-block-compression.rst
+
+The :term:`zstd` compression engine provides better compression ratios 
+and a better overall user experience.
+
 Report an Issue
 ---------------
 
