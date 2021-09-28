@@ -65,7 +65,7 @@ the *side* collection (``config.image_collection``).
 
 When starting a :binary:`mongod` with the 
 :option:`--configsvr <mongod--configsvr>` option it is now required to 
-specify a :option:`--replSetName <mongod --replSet>`.
+specify a :option:`--replSetName <mongod --replSet>`. 
 
 When starting a mongod with the :option:`--shardsvr <mongod --shardsvr>`
 option it is now required to specify a 

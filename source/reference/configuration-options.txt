@@ -4247,7 +4247,7 @@ LDAP Parameters
         - Start this instance as a :term:`config server`. The instance
           starts on port ``27019`` by default.
 
-          Starting in MongoDB 5.1, when configuring an instance as 
+          When configuring a MongoDB instance as 
           clusterRole ``configsvr`` you must also specify a 
           :setting:`~replication.replSetName`.
 
@@ -4256,7 +4256,7 @@ LDAP Parameters
         - Start this instance as a :term:`shard`. The instance starts
           on port ``27018`` by default.
 
-          Starting in MongoDB 5.1, when configuring an instance as a 
+          When configuring a MongoDB instance as a 
           a clusterRole ``shardsvr`` you must also specify a 
           :setting:`~replication.replSetName`.
    
