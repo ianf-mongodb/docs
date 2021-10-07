@@ -62,6 +62,9 @@ Definition
         
           Set to ``1``.
 
+          In the context of this command ``1`` is a placeholder value.
+          This value does not affect the output.
+
       * - :ref:`defaultReadConcern <setDefaultRWConcern-cmd-defaultReadConcern>`
         
         - ``object``
