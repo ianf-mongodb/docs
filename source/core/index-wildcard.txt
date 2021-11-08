@@ -185,6 +185,39 @@ For an example, see :ref:`createIndex-method-wildcard-exclusion`.
 
    .. include:: /includes/extracts/wildcard-index-inclusion-exclusion.rst
 
+.. _normalized_wildcard_indexes:
+
+Viewing Normalized wildcard Indexes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Starting in Mongodb 5.0, wildcard indexes will be 
+normalized after creation.
+
+For example, create a wildcard index:
+
+.. code-block:: javascript
+
+  db.books.createIndex( { "$**" : 1 }, { wildcardProjection : { a: 1} } )
+
+View the index with the :method:`db.collection.getIndexes()` method:
+
+.. code-block:: javascript
+
+  db.books.getIndexes()
+
+The results are displayed in a normalized format:
+
+.. code-block:: javascript
+   :copyable: false
+
+      { v: 2, key: { _id: 1 }, name: '_id_' },
+      {
+         v: 2,
+         key: { '$**': 1 },
+         name: '$**_1',
+         wildcardProjection: { a: true, _id: false }
+      }
+
 Considerations
 --------------
 

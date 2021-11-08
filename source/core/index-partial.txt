@@ -280,4 +280,3 @@ greater than or equal to 21.
    db.users.insert( { username: "david", age: 20 } )
    db.users.insert( { username: "amanda" } )
    db.users.insert( { username: "rajiv", age: null } )
-
