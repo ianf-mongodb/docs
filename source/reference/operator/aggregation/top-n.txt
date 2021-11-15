@@ -1,0 +1,69 @@
+====================
+$top-n (aggregation)
+====================
+.. 
+  Using setWindowFields.txt as template
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Definition
+----------
+
+.. pipeline:: $setWindowFields
+
+.. versionadded:: 5.2
+
+Description
+
+Syntax
+------
+
+The stage syntax:
+
+Behavior
+--------
+
+Restrictions
+------------
+
+Restrictions for the xxx stage:
+
+Examples
+--------
+
+Example 1
+~~~~~~~~~
+
+Results:
+
+.. code-block:: javascript
+   :copyable: false
+
+   { "_id" : 4, "type" : "strawberry", "orderDate" : ISODate("2019-05-18T16:09:01Z"),
+     "state" : "CA", "price" : 41, "quantity" : 162,
+     "recentOrders" : [ ] }
+   { "_id" : 0, "type" : "chocolate", "orderDate" : ISODate("2020-05-18T14:10:30Z"),
+     "state" : "CA", "price" : 13, "quantity" : 120,
+     "recentOrders" : [ ISODate("2019-05-18T16:09:01Z") ] }
+   { "_id" : 2, "type" : "vanilla", "orderDate" : ISODate("2021-01-11T06:31:15Z"),
+     "state" : "CA", "price" : 12, "quantity" : 145,
+     "recentOrders" : [ ISODate("2019-05-18T16:09:01Z") ] }
+   { "_id" : 5, "type" : "strawberry", "orderDate" : ISODate("2019-01-08T06:12:03Z"),
+     "state" : "WA", "price" : 43, "quantity" : 134,
+     "recentOrders" : [ ] }
+   { "_id" : 3, "type" : "vanilla", "orderDate" : ISODate("2020-02-08T13:13:23Z"),
+     "state" : "WA", "price" : 13, "quantity" : 104,
+     "recentOrders" : [ ISODate("2019-01-08T06:12:03Z") ] }
+   { "_id" : 1, "type" : "chocolate", "orderDate" : ISODate("2021-03-20T11:30:05Z"),
+     "state" : "WA", "price" : 14, "quantity" : 140,
+     "recentOrders" : [ ISODate("2019-01-08T06:12:03Z"), ISODate("2020-02-08T13:13:23Z") ] }
+
+.. seealso::
+
+   .. include:: /includes/fact-timeseries-example-aggregation-book.rst
